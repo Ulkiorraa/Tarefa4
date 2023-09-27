@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclua o Bootstrap se você optar pelo bônus -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        <form id="employee-form">
+            <div class="form-group">
+                <label for="employee-name">Nome do funcionário:</label>
+                <input type="text" class="form-control" id="employee-name" required>
+            </div>
+            <div class="form-group">
+                <label for="employee-email">Email do funcionário:</label>
+                <input type="email" class="form-control" id="employee-email" required>
+            </div>
+            <div class="form-group">
+                <label for="employee-role">Cargo do funcionário:</label>
+                <select class="form-control" id="employee-role" required>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="diretor">Diretor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="employee-salary">Valor do salário:</label>
+                <input type="number" class="form-control" id="employee-salary" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <h2>Funcionários Cadastrados:</h2>
+        <ul id="employee-list"></ul>
+        <h3>Informações:</h3>
+        <p>Total de salários pagos: <span id="total-salary">0</span></p>
+        <p>Gerentes cadastrados: <span id="manager-count">0</span></p>
+    </div>
+    <script src="script.js"></script>
+    <!-- Inclua o Bootstrap JS se você optar pelo bônus -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
